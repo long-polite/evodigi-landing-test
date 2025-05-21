@@ -1,0 +1,399 @@
+@import url(https://db.onlinewebfonts.com/c/34e23dd51b4e6f71165cb62eff021e01?family=Archivo+Expanded);
+
+@font-face {
+  font-family: "Archivo Expanded";
+  src: url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.eot");
+  src: url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.svg#Archivo Expanded")
+      format("svg");
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo Expanded";
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  background-color: #f2f5f4;
+  color: #242526;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f5f4;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER / NAVBAR */
+
+.main-header {
+  position: fixed;
+  background-color: #000000;
+  color: #f2f5f4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+  transition: top 0.4s ease-in-out; /* Smoother animation */
+  opacity: 0.7;
+}
+
+/* LOGO */
+
+.logo {
+  width: 210px;
+  height: auto;
+  opacity: 1;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+}
+
+/*DESKTOP MAIN MENU */
+.desktop-main-menu {
+  margin-right: 50px;
+}
+
+.desktop-main-menu ul {
+  display: flex;
+}
+
+.desktop-main-menu ul li {
+  position: relative;
+  margin-right: 30px;
+  padding-bottom: 2px;
+}
+
+/* MENU ITEM BOTTOM BORDER */
+
+.desktop-main-menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #c9d952;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.desktop-main-menu ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition-duration: 0.4s;
+}
+
+/* 🔹 1. Banner */
+.banner img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+/* 🔹 2. Tagline Section */
+.tagline {
+  max-width: 100%; /* Limit width to 80% of the screen */
+  margin: 0 auto; /* Center the section */
+  height: 90vh; /* Fill 80% of screen height */
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 0 20px;
+  text-align: center;
+}
+
+.tagline h1 {
+  font-size: 6em;
+  margin: 0;
+}
+
+/* 🔹 3. Video Section (80% height) */
+.video-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 86%;
+  height: inherit;
+}
+
+#previewVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 56.25vw;
+  min-height: 100%;
+  min-width: 177.77vh;
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+  z-index: 1;
+  transition: width 1s ease;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.modal-content video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close {
+  position: absolute;
+  top: -30px;
+  right: -10px;
+  color: #f2f5f4;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  padding: 80px 0;
+  max-width: 90vw;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.text-column {
+  font-size: 30px;
+  line-height: 1.8;
+  justify-content: start;
+  margin-left: 20px;
+}
+
+.text-column h2 {
+  max-width: 90%;
+  font-size: 46px;
+  margin-bottom: 53px;
+  line-height: 1.6;
+}
+
+.text-column p {
+  margin-bottom: 20px;
+}
+
+.image-column img {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.button-group {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Stack buttons on small screens */
+}
+
+.btn {
+  font-style: italic;
+  padding: 10px 30px;
+  font-size: 1em;
+  font-weight: semibold;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark button */
+.btn-dark {
+  background-color: #f2f5f4;
+  color: #242526;
+}
+
+/* Light green button */
+.btn-light {
+  background-color: #c9d952;
+  color: #242526;
+}
+
+/* Optional hover effects */
+.btn-dark:hover {
+  text-decoration: underline;
+}
+
+.btn-light:hover {
+  background-color: #242526;
+  color: #f2f5f4;
+}
+
+/*footer*/
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #f2f5f4;
+  color: #242526;
+  padding: 80px 40px 50px;
+  font-size: 1.2em; /* Bigger base font size */
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between; /* Pushes columns far apart */
+  gap: 750px; /* Optional extra spacing */
+  max-width: 1440px;
+  margin: 0 auto 50px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 330px;
+  line-height: 2; /* Taller line height */
+}
+
+.policies {
+  line-height: 1.5;
+  padding-left: 72px;
+}
+
+.footer-col h4 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-col p,
+.footer-col ul {
+  margin: 0;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+.footer-col a {
+  color: #242526;
+  text-decoration: none;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+/* Social icons section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 710px;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+}
+
+.footer-social {
+  text-align: left;
+}
+
+.footer-social a {
+  color: #242526;
+  font-size: 3em;
+  margin-right: 30px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #c9d952;
+}
+
+.footer-copy {
+  color: #242526;
+  font-size: 1em;
+  text-align: right;
+  margin-top: 15px;
+}
+
+#linkedin {
+  font-size: 3.5em;
+}
+
+#zalo {
+  width: 12%;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .footer-social,
+  .footer-copy {
+    text-align: center;
+  }
+}
