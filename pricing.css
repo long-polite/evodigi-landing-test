@@ -1,0 +1,382 @@
+@import url(https://db.onlinewebfonts.com/c/34e23dd51b4e6f71165cb62eff021e01?family=Archivo+Expanded);
+
+@font-face {
+  font-family: "Archivo Expanded";
+  src: url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.eot");
+  src: url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/34e23dd51b4e6f71165cb62eff021e01.svg#Archivo Expanded")
+      format("svg");
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Archivo Expanded";
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  background-color: #242526;
+  color: #f2f5f4;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f5f4;
+}
+
+ul {
+  list-style: none;
+}
+
+/* HEADER / NAVBAR */
+
+.main-header {
+  position: fixed;
+  background-color: #242526;
+  color: #f2f5f4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 30px;
+  transition: top 0.4s ease-in-out; /* Smoother animation */
+}
+
+/* LOGO */
+
+.logo {
+  width: 210px;
+  height: auto;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*DESKTOP MAIN MENU */
+.desktop-main-menu {
+  margin-right: 50px;
+}
+
+.desktop-main-menu ul {
+  display: flex;
+}
+
+.desktop-main-menu ul li {
+  position: relative;
+  margin-right: 30px;
+  padding-bottom: 2px;
+}
+
+/* MENU ITEM BOTTOM BORDER */
+
+.desktop-main-menu ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #c9d952;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.desktop-main-menu ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+  transition-duration: 0.4s;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  color: #f2f5f4;
+  background-color: #f2f5f4;
+}
+
+h5 {
+  margin: 15px;
+}
+
+.choose-plan-title {
+  text-align: center;
+  font-size: 6em;
+  font-weight: 700;
+  color: #f2f5f4; /* Matches your accent color */
+  margin-top: 120px; /* To give space from the header */
+  margin-bottom: 40px;
+}
+
+h4.card-title {
+  margin: 35px 0 35px 0;
+  font-size: 2.5em;
+}
+
+.card-description {
+  font-size: 1.2em;
+  color: #242526;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  opacity: 0.8;
+  transition: color 0.4s ease-in-out;
+}
+
+.starting-at {
+  margin-bottom: 20px;
+  opacity: 0.6;
+  transition: color 0.4s ease-in-out;
+}
+
+.yearly {
+  margin-bottom: 20px;
+  opacity: 0.6;
+  transition: color 0.4s ease-in-out;
+}
+
+.professional-card {
+  .card-description {
+    font-size: 1.2em;
+    color: #242526;
+    margin-top: 33px;
+    color: #f2f5f4;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+}
+
+.price {
+  font-size: 3.5em;
+  color: #242526;
+  margin: 0 0 20px 0;
+  transition: color 0.4s ease-in-out;
+}
+
+.master-price {
+  margin-bottom: 25px;
+}
+
+.professional-card > h4 {
+  margin-top: 35px;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.professional-card > .price {
+  color: #f2f5f4;
+  margin-top: 20px;
+}
+
+.professional-card > hr {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 217, 82, 1) 0%,
+    rgba(87, 199, 133, 1) 100%,
+    rgba(237, 221, 83, 1) 100%
+  );
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.text,
+.card-title {
+  color: #242526;
+  transition: color 0.4s ease-in-out;
+}
+
+/* ------------ Grid ------------*/
+.grid-parent {
+  margin-top: 80px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 28%);
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* ------------ Cards ------------*/
+.card {
+  border-radius: 8px;
+  padding: 0 10%;
+  margin: 20px;
+  box-shadow: 0px 0px 25px -8px hsl(240, 9%, 76%);
+}
+
+.basic-card,
+.master-card {
+  background-color: #f2f5f4;
+  color: #242526;
+  margin-top: 100px;
+  transition: margin-top 0.4s ease-in-out;
+  height: 90vh;
+  border-radius: 20px;
+}
+
+.basic-card:hover {
+  margin-top: 25px;
+  background: linear-gradient(
+    90deg,
+    rgb(52, 54, 36) 0%,
+    rgb(44, 77, 58) 100%,
+    rgb(36, 35, 25) 100%
+  );
+  .button-container {
+    margin-top: 10px;
+  }
+  .card-description {
+    color: #f2f5f4;
+  }
+  .starting-at {
+    color: #f2f5f4;
+  }
+  .price {
+    color: #f2f5f4;
+  }
+  .yearly {
+    color: #f2f5f4;
+  }
+  .card-title {
+    color: #c9da4a;
+    text-shadow: 0px 0px 3px #c6d840;
+  }
+  .text {
+    color: #f2f5f4;
+  }
+}
+
+.master-card:hover {
+  margin-top: 25px;
+  background: linear-gradient(
+    90deg,
+    rgb(52, 54, 36) 0%,
+    rgb(44, 77, 58) 100%,
+    rgb(36, 35, 25) 100%
+  );
+  .button-container {
+    margin-top: 10px;
+  }
+  .card-description {
+    color: #f2f5f4;
+  }
+  .starting-at {
+    color: #f2f5f4;
+  }
+  .price {
+    color: #f2f5f4;
+  }
+  .yearly {
+    color: #f2f5f4;
+  }
+  .card-title {
+    color: #c9da4a;
+    text-shadow: 0px 0px 3px #c6d840;
+  }
+  .text {
+    color: #f2f5f4;
+  }
+}
+.professional-card {
+  border-radius: 20px;
+  background: #c9d952;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 217, 82, 1) 0%,
+    rgba(87, 199, 133, 1) 100%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  color: #f2f5f4;
+  height: 98vh;
+  place-self: center auto;
+}
+
+/* ------------ Buttons Style ------------*/
+.button-container {
+  text-align: center;
+  transition: margin-top 0.4s ease-in-out;
+}
+.button {
+  background: #c9d952;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 217, 82, 1) 0%,
+    rgba(87, 199, 133, 1) 100%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  width: 60%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  color: #f2f5f4;
+  padding: 5px 20px;
+  text-decoration: none;
+  margin: 20px 0 25px 0;
+  font-weight: 700;
+
+  letter-spacing: 1.3px;
+}
+
+.professional-button {
+  background-color: #f2f5f4;
+  width: 60%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  color: #242526;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 0 25px 0;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.pro-btn:hover {
+  border: 1px solid white;
+  background: #c9d952;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 217, 82, 1) 0%,
+    rgba(87, 199, 133, 1) 100%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  color: #f2f5f4;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f2f5f4;
+  color: #c9d952;
+  border: 1px solid #c9d952;
+  cursor: pointer;
+}
