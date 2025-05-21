@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://db.onlinewebfonts.com/c/34e23dd51b4e6f71165cb62eff021e01?family=Archivo+Expanded"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="space.css" />
+    <link rel="icon" type="image/png" href="logo-title.png" />
+
+    <title>EvoDigi Home Page</title>
+  </head>
+  <body>
+    <header class="main-header" id="navbar">
+      <div class="logo">
+        <a href="home.html">
+          <img src="logo-white.png" alt="EvoDigi" />
+        </a>
+      </div>
+
+      <nav class="desktop-main-menu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 🔹 1. Full-width Banner -->
+    <section class="banner">
+      <img src="banner.png" alt="Banner Image" />
+    </section>
+
+    <!-- 🔹 2. Center Tagline Section -->
+    <section class="tagline">
+      <h1 data-aos="fade-up" data-aos-duration="2000">
+        MINIMAL BY DESIGN. PROFESSIONAL BY RESULT.
+      </h1>
+    </section>
+
+    <!-- 🔹 3. Video Section -->
+    <section class="video-section">
+      <div class="video-wrapper">
+        <div class="video-foreground">
+          <video id="previewVideo" autoplay loop muted playsinline>
+            <source src="Evodigi.MOV" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <video id="modalVideo" controls autoplay muted>
+          <source src="Evodigi.MOV" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <section class="content-grid">
+      <div class="text-column" data-aos="fade-right">
+        <h2>Affirm Your Professional Presence with Confidence</h2>
+        <p>
+          An EvoDigi website is more than just an online space—it is a
+          reflection of your professionalism, experience, and reputation. Our
+          minimalist and sophisticated design approach ensures your strengths
+          are front and center, leaving a lasting impression on both clients and
+          partners.
+        </p>
+
+        <div class="button-group">
+          <a href="#" class="btn btn-dark">Learn More</a>
+          <a href="#" class="btn btn-light">Get Started</a>
+        </div>
+      </div>
+      <div class="image-column" data-aos="fade-left">
+        <img src="des-1.jpg" alt="Descriptive Alt Text" />
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="image-column" data-aos="fade-right">
+        <img src="des-2.jpg" alt="Descriptive Alt Text" />
+      </div>
+      <div class="text-column" data-aos="fade-left">
+        <h2>Attract and Engage Potential Clients</h2>
+        <p>
+          Our websites are strategically designed to connect you with your ideal
+          audience. With a clear layout, compelling content, and well-placed
+          calls to action, EvoDigi helps guide prospective clients naturally
+          toward your services.
+        </p>
+
+        <div class="button-group">
+          <a href="#" class="btn btn-dark">Learn More</a>
+          <a href="#" class="btn btn-light">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="text-column" data-aos="fade-right">
+        <h2>Save Time and Stay Focused</h2>
+        <p>
+          We respect how valuable your time is. That’s why our workflow is
+          streamlined, our delivery punctual, and our packages flexible to suit
+          your needs. With EvoDigi, you can set aside the technical worries and
+          focus fully on your area of expertise.
+        </p>
+
+        <div class="button-group">
+          <a href="#" class="btn btn-dark">Learn More</a>
+          <a href="#" class="btn btn-light">Get Started</a>
+        </div>
+      </div>
+      <div class="image-column" data-aos="fade-left">
+        <img src="des-3.jpg" alt="Descriptive Alt Text" />
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="image-column" data-aos="fade-right">
+        <img src="des-4.png" alt="Descriptive Alt Text" />
+      </div>
+      <div class="text-column" data-aos="fade-left">
+        <h2>Take Control of Your Online Presence</h2>
+        <p>
+          With a user-friendly content management system and thorough onboarding
+          guidance, EvoDigi gives you full autonomy over your website. Updating
+          information, sharing your insights, and interacting with your audience
+          becomes effortless and intuitive.
+        </p>
+
+        <div class="button-group">
+          <a href="#" class="btn btn-dark">Learn More</a>
+          <a href="#" class="btn btn-light">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div class="footer-col contact-info">
+          <p>polite@polite.vn</p>
+          <p>+123 456 7890</p>
+          <p>225 Quang An, Tay Ho, Hanoi</p>
+        </div>
+        <div class="footer-col policies">
+          <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Accessibility Statement</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook" id="facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <a href="#" aria-label="LinkedIn" id="linkedin"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" aria-label="zalo"
+            ><img src="zalo.png" alt="" id="zalo"
+          /></a>
+        </div>
+        <div class="footer-copy">© 2025 by EvoDigi Agency</div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="video.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  </body>
+</html>
