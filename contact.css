@@ -289,7 +289,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 720px;
+  gap: 40em;
   max-width: 1440px;
   margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
