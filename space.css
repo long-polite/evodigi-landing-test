@@ -61,7 +61,8 @@ ul {
   height: 80px;
   padding: 0 30px;
   transition: top 0.4s ease-in-out; /* Smoother animation */
-  opacity: 0.7;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* LOGO */
@@ -253,7 +254,7 @@ ul {
   font-style: italic;
   padding: 10px 30px;
   font-size: 1em;
-  font-weight: semibold;
+  font-weight: 600;
   text-decoration: none;
   border-radius: 15px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -348,7 +349,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 710px;
+  gap: 40em;
   max-width: 1440px;
   margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -357,6 +358,11 @@ ul {
 
 .footer-social {
   text-align: left;
+}
+
+.footer-text,
+.footer-social {
+  margin: 1rem 0;
 }
 
 .footer-social a {
@@ -378,11 +384,29 @@ ul {
 }
 
 #linkedin {
-  font-size: 3.5em;
+  width: 80px;
+  height: 80px;
 }
 
-#zalo {
-  width: 12%;
+@media (max-width: 900px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .tagline h1 {
+    font-size: 2.5em;
+  }
+
+  .btn {
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -395,5 +419,17 @@ ul {
   .footer-social,
   .footer-copy {
     text-align: center;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-column {
+    order: -1; /* Makes image appear above */
+  }
+
+  .text-column {
+    order: 0;
   }
 }
